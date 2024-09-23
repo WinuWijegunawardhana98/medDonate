@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/doanr_prescription_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingStart="16dp"
+        android:text="Prescription ID"
+        android:paddingTop="5dp"
+        android:fontFamily="serif"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/doanr_prescription_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingStart="16dp"
+        android:text="Prescription ID"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/doanr_prescription_crud_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:fontFamily="serif"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/doanr_prescription_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/placeholder_prescription"/>
+
+    <TextView
+        android:id="@+id/doanr_prescription_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="serif"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/doanr_prescription_accept_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:fontFamily="serif"
+            android:layout_marginStart="20dp"
+            android:paddingTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:paddingEnd="16dp"
+            android:textSize="12dp"
+            android:paddingBottom="8dp"
+            android:text="Accept"/>
+
+        <Button
+            android:id="@+id/doanr_prescription_download_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="16dp"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:fontFamily="serif"
+            android:layout_marginStart="20dp"
+            android:paddingEnd="16dp"
+            android:textSize="12dp"
+            android:paddingBottom="8dp"
+            android:text="Download"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/doanr_prescription_view_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:paddingStart="16dp"-->
+<!--            android:background="@drawable/btn_background"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="12dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:fontFamily="serif"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:paddingEnd="16dp"-->
+<!--            android:paddingBottom="8dp"-->
+<!--            android:text="Account Details"/>-->
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

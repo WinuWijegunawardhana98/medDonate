@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    tools:context=".UserProfileUpdate"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/commentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="16dp"
+        android:fontFamily="serif"
+        android:text="Update User Profile"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white"
+        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:fontFamily="serif"
+        android:textColorHint="#b3b3b3"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/birthdayEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birthday"
+        android:layout_below="@id/nameEditText"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:paddingStart="16dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#b3b3b3"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:layout_below="@id/birthdayEditText"
+        android:padding="16dp"
+        android:fontFamily="serif"
+        android:textColorHint="#b3b3b3"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/DarkGreen"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="16dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="320dp"
+        app:menu="@menu/bottom_nav"
+        android:layout_gravity="bottom"/>
+</LinearLayout>

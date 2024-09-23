@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MAD_Medicine_managment</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="logo_desc">MediDonate</string>
+
+    <string name="name_hint">Enter your name</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="location_hint">Enter your location</string>
+    <string name="birthday_hint">Enter your birthday (YYYY-MM-DD)</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="confirm_password_hint">Confirm your password</string>
+    <string name="register_button_text">Register</string>
+    <string name="already_have_account_text">Already have an account? Login</string>
+    <string name="designation_prompt">Select Designation</string>
+    <string name="sign_in">Sign In</string>
+    <string name="Sign_up">Sign Up</string>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
+    tools:context=".PatientMainPage"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Upload Document"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:src="@drawable/placeholder_prescription" />
+
+
+
+    <TextView
+        android:id="@+id/fileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Name"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:text="Choose File"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_file_button" />
+
+    <TextView
+        android:text="Comments"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/comments_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:maxLines="10"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:id="@+id/submit_button" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="210dp"
+        app:menu="@menu/bottom_nav"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

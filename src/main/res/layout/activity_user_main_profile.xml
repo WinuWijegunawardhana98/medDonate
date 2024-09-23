@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userMainProfile"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/userEmailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/userLocationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/userDesignationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/userBirthdayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/userAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="View Account Details"/>
+
+    <Button
+        android:id="@+id/userUpdateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="Update"/>
+
+    <Button
+        android:id="@+id/userLogoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:paddingTop="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Logout"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="270dp"
+        app:menu="@menu/bottom_nav"
+        android:layout_gravity="bottom"/>
+
+
+
+</LinearLayout>

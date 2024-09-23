@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountDetailsUpdate"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/accountIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="16sp"
+            android:text="Update Your Account Details"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/accountNoLabelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Account No."
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/accountNoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="16dp"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter account no." />
+
+        <TextView
+            android:id="@+id/bankLabelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bankEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="16dp"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter bank name" />
+
+        <TextView
+            android:id="@+id/branchLabelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/branchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="16dp"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter branch name" />
+
+        <TextView
+            android:id="@+id/mobileNoLabelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mobileNoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="16dp"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter mobile no." />
+
+        <Button
+            android:id="@+id/account_updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/btn_background"
+            android:backgroundTint="@color/DarkGreen" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="100dp"
+            app:menu="@menu/bottom_nav"
+            android:layout_gravity="bottom"/>
+</LinearLayout>

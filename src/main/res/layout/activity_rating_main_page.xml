@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/add_new_prescription_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Add new Prescription"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:visibility="gone"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/view_prescription_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="View Prescription"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/View_Pharmacy_pres_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="View Prescription"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/View_donor_pres_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="View Prescription"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:visibility="gone"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/ratings_empty_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No ratings yet"
+        android:fontFamily="serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rate_app_text_view"
+            android:text="Rate our app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            android:gravity="start"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+        <TextView
+            android:id="@+id/seeAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="serif"
+            android:text="See All()"
+            android:textAlignment="center"
+            android:textColor="@color/DarkRed"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <EditText
+        android:id="@+id/comment_rating_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add a comment (optional)"
+        android:fontFamily="serif"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:maxLines="4"
+        android:layout_marginTop="8dp"/>
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:fontFamily="serif"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav"/>
+
+
+</LinearLayout>

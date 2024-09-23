@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PatientRegistration">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/donate"
+        android:contentDescription="@string/logo_desc"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/background_gradient"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="serif"
+                android:padding="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/name_hint"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_hint"
+                android:layout_marginStart="24dp"
+                android:fontFamily="serif"
+                android:layout_marginEnd="24dp"
+                android:padding="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/location_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/location_hint"
+                android:inputType="textPostalAddress"/>
+
+            <EditText
+                android:id="@+id/birthday_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="serif"
+                android:layout_marginEnd="24dp"
+                android:padding="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/birthday_hint"
+                android:inputType="date"/>
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="serif"
+                android:padding="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/confirm_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="16dp"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/confirm_password_hint"
+                android:inputType="textPassword"/>
+
+            <Spinner
+                android:id="@+id/designation_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="16dp"
+                android:fontFamily="serif"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:prompt="@string/designation_prompt"
+                android:entries="@array/designations"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button_text"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/DarkGreen"
+        />
+
+
+</LinearLayout>
